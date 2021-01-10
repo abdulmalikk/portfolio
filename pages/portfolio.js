@@ -16,7 +16,7 @@ export default function Portfolio() {
       title: 'Kabar Bola (Progressive Web Apps)',
       desc: 'Website PWA yang menampilkan update klasemen dan info klub dari 6 liga top eropa',
       demoHref: 'https://kabar-bola.netlify.app',
-      githubHref: 'https://github.com/abdulmalikk/abdulmalikk.github.io',
+      githubHref: 'https://github.com/abdulmalikk/kabar-bola',
     },
     {
       imgSrc: 'bnc-fotocopy.jpg',
