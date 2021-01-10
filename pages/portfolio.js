@@ -5,19 +5,33 @@ import Card from '../components/Card';
 export default function Portfolio() {
   const portfolioData = [
     {
-      imgSrc: '',
+      imgSrc: 'news-finder.jpg',
       title: 'News Finder',
-      desc: 'Aplikasi pencarian berita dari berbagai sumber beberapa negara',
+      desc: 'Website pencarian berita dari berbagai sumber beberapa negara',
       demoHref: 'https://news-finder.netlify.app',
-      githubHref: 'https://github.com/abdulmalikk/news-finder'
+      githubHref: 'https://github.com/abdulmalikk/news-finder',
     },
     {
-      imgSrc: '',
+      imgSrc: 'kabar-bola.jpg',
       title: 'Kabar Bola (Progressive Web App)',
-      desc: 'Aplikasi PWA yang menampilkan update klasemen dan info klub dari 6 liga top eropa',
+      desc: 'Website PWA yang menampilkan update klasemen dan info klub dari 6 liga top eropa',
       demoHref: 'https://kabar-bola.netlify.app',
-      githubHref: 'https://github.com/abdulmalikk/abdulmalikk.github.io'
-    }
+      githubHref: 'https://github.com/abdulmalikk/abdulmalikk.github.io',
+    },
+    {
+      imgSrc: 'bnc-fotocopy.jpg',
+      title: 'BNC Fotocopy',
+      desc: 'Website company profile yang menampilkan informasi dan produk perusahaan BNC Fotocopy',
+      demoHref: 'https://bncfotocopy.com',
+      githubHref: '',
+    },
+    {
+      imgSrc: 'restooo.jpg',
+      title: 'Restooo (Progressive Web App)',
+      desc: 'Website PWA yang menampilkan beberapa restoran keren untuk dikunjungi',
+      demoHref: 'https://restooo.netlify.app',
+      githubHref: 'https://github.com/abdulmalikk/restooo',
+    },
   ];
 
   return (
@@ -29,13 +43,21 @@ export default function Portfolio() {
       <Navbar />
       <main>
         <h1>Portfolio</h1>
-        <div className='portfolio-content'>
-          { portfolioData.map((data, i) => {
+
+        <div className="portfolio-content">
+          {portfolioData.map((data) => {
             const { imgSrc, title, desc, demoHref, githubHref } = data;
             return (
-              <Card key={i} imgSrc={imgSrc} title={title} desc={desc} demoHref={demoHref} githubHref={githubHref} />
+              <Card
+                key={title}
+                imgSrc={imgSrc}
+                title={title}
+                desc={desc}
+                demoHref={demoHref}
+                githubHref={githubHref}
+              />
             );
-          }) }
+          })}
         </div>
       </main>
     </>
