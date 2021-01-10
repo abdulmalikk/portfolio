@@ -21,45 +21,69 @@ a {
 }
 
 main {
-  width: 60%;
-  margin: 50px auto;
+  width: 85%;
+  margin: 40px auto;
+  @media screen and (min-width: $tablet) {
+    width: 80%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 65%;
+  }
   
   .hero {
-    padding-top: 35px;
+    margin-top: 70px;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+    }
 
     .text-wrapper {
-      width: 50%;
-      
+      @media screen and (min-width: $tablet) {
+        width: 50%
+      }
       h1 {
         margin-bottom: 0;
-        font-size: 50px;
+        font-size: 30px;
         display: inline-block;
-  
+        @media screen and (min-width: $tablet) {
+          font-size: 40px;
+        }
+
         span {
-          font-size: 70px;
+          font-size: 45px;
           color: $primary-color;
+          @media screen and (min-width: $tablet) {
+            font-size: 55px;
+          }
+          @media screen and (min-width: $desktop) {
+            font-size: 65px;
+          }
         }
       }
 
       p {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         display: inline-block;
         color: $text-secondary-color;
       }
 
       .button-cta {
-        width: 360px;
-        height: 60px;
-        padding: 10px 100px;
-        font-size: 1.1rem;
+        width: 100%;
+        padding: 10px 0;
+        display: block;
+        font-size: 18px;
         font-weight: 600;
+        text-align: center;
         color: $light-color;
         background-color: $primary-color;
         box-shadow: 0px 6px 12px rgba(204, 2, 50, 0.3);
         border-radius: 8px;
         transition: .3s;
+        @media screen and (min-width: $tablet) {
+          width: 360px;
+        }
 
         &:hover {
           opacity: 80%;
@@ -68,13 +92,19 @@ main {
     }
 
     .img-wrapper {
-      width: 50%;
-      text-align: right;
+      width: 60%;
+      @media screen and (min-width: $tablet) {
+        width: 50%;
+        text-align: right;
+      }
       
       img {
-        width: 220px;
+        width: 100%;
         border: 15px solid #DBE1EF;
         border-radius: 100%;
+        @media screen and (min-width: $tablet) {
+          width: 220px;
+        }
       }
     }
   }
@@ -82,13 +112,16 @@ main {
 
 .portfolio-content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 20px;
+  @media screen and (min-width: $phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .ul-about {
   margin-top: -15px;
-  list-style-type: none;
+  list-style-type: square;
 
   li {
     margin: 5px 0;
@@ -101,5 +134,12 @@ main {
 
   &:hover {
     opacity: 80%;
+  }
+}
+
+.text-contact {
+  font-size: 16px;
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
   }
 }

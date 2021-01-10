@@ -20,9 +20,9 @@ export default function Home() {
             </h1>
             <p>
               Saya pelajar SMK jurusan RPL (Rekayasa Perangkat
-              <br />
+              
               Lunak) yang lulus di tahun 2020, dan saat
-              <br />
+              
               ini menekuni bidang web development.
             </p>
             <Link href='/contact'>

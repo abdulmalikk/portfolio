@@ -1,18 +1,32 @@
+@import 'variable';
+
 .nav {
-  padding-top: 40px;
+  padding-top: 35px;
 
   .nav-links-wrapper {
-    width: 50%;
+    width: 90%;
     padding: 0;
     margin: auto;
     display: flex;
+    @media screen and (min-width: $phone) {
+      width: 70%;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 60%;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 50%;
+    }
 
     .nav-link {
       list-style: none;
       margin: 0 auto;
-      font-size: 18px;
+      font-size: 16px;
       letter-spacing: 2px;
       transition: .3s;
+      @media screen and (min-width: $tablet) {
+        font-size: 18px;
+      }
 
       &:hover {
         opacity: .6;
@@ -20,7 +34,7 @@
 
       .active-link {
         font-weight: 600;
-        color: #FF023F;
+        color: $primary-color;
         text-shadow: 1px 1px 6px rgba(255, 0, 60, 0.4);
       }
     }
