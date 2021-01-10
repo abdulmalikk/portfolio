@@ -13,7 +13,7 @@ export default function Portfolio() {
     },
     {
       imgSrc: 'kabar-bola.jpg',
-      title: 'Kabar Bola (Progressive Web App)',
+      title: 'Kabar Bola (Progressive Web Apps)',
       desc: 'Website PWA yang menampilkan update klasemen dan info klub dari 6 liga top eropa',
       demoHref: 'https://kabar-bola.netlify.app',
       githubHref: 'https://github.com/abdulmalikk/abdulmalikk.github.io',
@@ -27,7 +27,7 @@ export default function Portfolio() {
     },
     {
       imgSrc: 'restooo.jpg',
-      title: 'Restooo (Progressive Web App)',
+      title: 'Restooo (Progressive Web Apps)',
       desc: 'Website PWA yang menampilkan beberapa restoran keren untuk dikunjungi',
       demoHref: 'https://restooo.netlify.app',
       githubHref: 'https://github.com/abdulmalikk/restooo',
