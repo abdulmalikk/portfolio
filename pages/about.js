@@ -21,8 +21,8 @@ export default function About() {
 
         <h2># pengalaman</h2>
         <ul className="ul-about">
-          <li>Magang sebagai web developer di CV. ON29 Studio (April 2019 - Mei 2019)</li>
-          <li>Bekerja sebagai web developer di PT. Buana Nirwana Cakrawala (Agustus 2020 - sekarang)</li>
+          <li>Magang sebagai Web Developer di CV. ON29 Studio (April 2019 - Mei 2019)</li>
+          <li>Bekerja sebagai IT Support di PT. Buana Nirwana Cakrawala (Agustus 2020 - sekarang)</li>
         </ul>
         
         <h2># skill</h2>
